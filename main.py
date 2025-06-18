@@ -5,9 +5,6 @@ from sklearn.metrics import accuracy_score,confusion_matrix
 import seaborn as sns
 import joblib
 
-# Save the trained model to file
-joblib.dump(model, 'model.pkl')
-
 
 import matplotlib.pyplot as plt 
 
