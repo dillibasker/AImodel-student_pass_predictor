@@ -22,3 +22,9 @@ cm = confusion_matrix(y_test, predictions)
 print("✅ Model Accuracy:", round(accuracy * 100, 2), "%")
 # 7. Confusion Matrix Heatmap
 sns.heatmap(cm, annot=True, fmt="d", cmap="Blues")
+
+plt.xlabel("Predicted")
+plt.ylabel("Actual")
+plt.title("Confusion Matrix - Pass/Fail")
+plt.show()
+
