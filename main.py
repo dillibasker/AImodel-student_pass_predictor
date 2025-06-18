@@ -3,6 +3,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score,confusion_matrix
 import seaborn as sns
+import joblib
+
+# Save the trained model to file
+joblib.dump(model, 'model.pkl')
+
 
 import matplotlib.pyplot as plt 
 
@@ -28,3 +33,5 @@ plt.ylabel("Actual")
 plt.title("Confusion Matrix - Pass/Fail")
 plt.show()
 
+# Save the trained model to file
+joblib.dump(model, 'model.pkl')
